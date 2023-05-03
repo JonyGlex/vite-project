@@ -1,10 +1,22 @@
-import { Slider } from "infinite-react-carousel/lib";
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer/Footer";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./Gig.scss";
 
 const Gig = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    appendDots: (dots) => {
+      return <ul style={{ margin: "0px" }}>{dots}</ul>;
+    },
+  };
   return (
     <>
       <Navbar />
@@ -29,7 +41,7 @@ const Gig = () => {
                 <span>5</span>
               </div>
             </div>
-            <Slider slidesToShow={1} arrowsScroll={1} className="slidergig">
+            <Slider Slider {...settings} className="slidergig">
               <img
                 src="https://images.pexels.com/photos/1074535/pexels-photo-1074535.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt=""
