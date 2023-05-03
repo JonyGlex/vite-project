@@ -1,0 +1,37 @@
+.dark {
+  background-color: #0d084d;
+}
+.explorebutton {
+  background-color: #1dbf73;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: max-content;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.ex {
+  color: white;
+}
+.descex {
+  font-size: 18px;
+  font-weight: 300;
+  color: gray;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: white !important;
+}
+
+.tituex {
+  color: white !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+.imgex {
+  width: 100%;
+}
